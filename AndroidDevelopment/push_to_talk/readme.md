@@ -23,7 +23,7 @@ tags: 安卓开发
 
 ### 设计的初稿如下：
 
-![设计1](/images/push_to_talk_imgs/设计1.png)
+![设计1](/push_to_talk_imgs/设计1.png)
 
 用林老师的高情商话术说：非常朴实，一看就是自己做的。
 
@@ -38,13 +38,13 @@ tags: 安卓开发
 1. 找一张美观的、尺寸合适的背景图片，放在app\src\main\res\mipmap-hdpi路径下，命名为aaa.png；
 2. 在activity_main.xml文件前面layout下加上这一行android:background="@mipmap/aaa"，如下图：
 
-![](/images/push_to_talk_imgs/插入图片.png)
+![](/push_to_talk_imgs/插入图片.png)
 
 
 
 插入图片后的效果如下图：
 
-![](/images/push_to_talk_imgs/设计2.png)
+![](/push_to_talk_imgs/设计2.png)
 
 好多了，我很满意了。
 
@@ -111,19 +111,19 @@ send是完全没有问题的：
 
 send内容为send：
 
-![](/images/push_to_talk_imgs/send1.png)
+![](/push_to_talk_imgs/send1.png)
 
 结果：
 
-![](/images/push_to_talk_imgs/send结果1.png)
+![](/push_to_talk_imgs/send结果1.png)
 
 send内容为se：
 
-![](/images/push_to_talk_imgs/send2.png)
+![](/push_to_talk_imgs/send2.png)
 
 结果：
 
-![](/images/push_to_talk_imgs/send结果2.png)
+![](/push_to_talk_imgs/send结果2.png)
 
 可惜，接收是有问题的。不太能接收到。
 
