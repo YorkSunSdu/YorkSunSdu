@@ -91,7 +91,7 @@ public void onClick_go(View view) {
 
    星期一晚上准备编写飞花令，根据实验报告中的步骤配置好了代码之后，运行了飞花令，结果发现虚拟机不能使用中文输入……把系统语言改为中文也不行，虚拟机根本没有中文输入法……
 
-   <img src="/AndroidDevelopment/feihualing/feihualing_imgs/输入法1.png" width="30%"><img src="/AndroidDevelopment/feihualing/feihualing_imgs/输入法2.png" width="30%">
+   <img src="/AndroidDevelopment/feihualing/feihualing_imgs/输入法1.png" width="30%">            <img src="/AndroidDevelopment/feihualing/feihualing_imgs/输入法2.png" width="30%">
 
    我一开始以为是moto虚拟机的问题，又下了一个华为的虚拟机，结果华为手机也没有中文输入法……最后只能用自己的手机了。 星期五搞了半天也没弄明白怎么用Android Studio连接自己的手机，结果星期一找到的第一个帖子的方法就成功了，手机截图如下：
 
@@ -115,7 +115,7 @@ public void onClick_go(View view) {
 
 3. 添加背景：被折磨的筋疲力竭之后，不想再折腾复杂的东西了，觉得添加宋词元曲四大名著没什么技术含量。尝试搜索把搜索的关键字标红的方法，发现太麻烦。于是决定给应用添加一个背景。在网上找了张淡雅的手机壁纸图，找了添加背景的教程，很顺利地成功了，效果还不错，见下效果图。
 
-   <img src="/AndroidDevelopment/feihualing/feihualing_imgs/效果图1.png" width="30%"><img src="/AndroidDevelopment/feihualing/feihualing_imgs/效果图2.png" width="30%">
+   <img src="/AndroidDevelopment/feihualing/feihualing_imgs/效果图1.png" width="30%">         <img src="/AndroidDevelopment/feihualing/feihualing_imgs/效果图2.png" width="30%">
 
 
 ## 源码
