@@ -31,7 +31,7 @@ tags: 安卓开发
 
 拖个按钮进来，现在是这样了：
 
-<img src="/feihualing_imgs/pic1.png" width="80%">
+![](/AndroidDevelopment/feihualing/feihualing_imgs/pic1.png)
 
 ### 步骤2：加代码
 
