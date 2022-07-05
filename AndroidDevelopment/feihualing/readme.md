@@ -115,7 +115,7 @@ public void onClick_go(View view) {
 
 3. 添加背景：被折磨的筋疲力竭之后，不想再折腾复杂的东西了，觉得添加宋词元曲四大名著没什么技术含量。尝试搜索把搜索的关键字标红的方法，发现太麻烦。于是决定给应用添加一个背景。在网上找了张淡雅的手机壁纸图，找了添加背景的教程，很顺利地成功了，效果还不错，见下效果图。
 
-   <img src="/AndroidDevelopment/feihualing/feihualing_imgs/效果图1.png" width="30%">         <img src="/AndroidDevelopment/feihualing/feihualing_imgs/效果图2.png" width="30%">
+   <img src="/AndroidDevelopment/feihualing/feihualing_imgs/效果图1.png" width="30%">         <img src="feihualing_imgs/效果图2.png" width="30%">
 
 
 ## 源码
