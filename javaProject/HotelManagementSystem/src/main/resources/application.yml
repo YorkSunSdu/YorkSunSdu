@@ -1,0 +1,59 @@
+# Tomcat
+server:
+    tomcat:
+        uri-encoding: UTF-8
+    port: 8080
+    servlet:
+        context-path: /springbootlvtr5
+
+spring:
+    datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/hoteltest?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+        username: root
+        password: 111111
+
+#        url: jdbc:mysql://120.46.182.143:3306/user058db?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+#        username: DB_USER058
+#        password: DB_USER058@123
+
+
+
+    servlet:
+      multipart:
+        max-file-size: 10MB
+        max-request-size: 10MB
+    resources:
+      static-locations: classpath:static/,file:static/
+
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.entity
+  global-config:
+    #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+    id-type: 1
+    #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+    field-strategy: 2
+    #驼峰下划线转换
+    db-column-underline: true
+    #刷新mapper 调试神器
+    refresh-mapper: true
+    #逻辑删除配置
+    logic-delete-value: -1
+    logic-not-delete-value: 0
+    #自定义SQL注入器
+    sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    call-setters-on-nulls: true
+    #springboot 项目mybatis plus 设置 jdbcTypeForNull (oracle数据库需配置JdbcType.NULL, 默认是Other)
+    jdbc-type-for-null: 'null' 
+
+alipay:
+  appId: 2021000121656214
+  appPrivateKey: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCEC5qwaRCHQHbvihtRRzWKjv6A2OniB+SQ+But45q0MItpmwwtzmEfLqunPiecG5LmqDiBa2L3Qr3XniZFDaii8bs/nE3VsxdZ6Kqv6q0ow4ZyIFqUk1f752UXJtW5pAIi0FqEbFZA4O/i/q1sjqcrolWIQNH9GW0qKmESVCAiVNWkAPBkItR5EvtY5I7QUbUBc312VsAZGAitmhPpX4dDRXJltka+sbK7ex2XMWFXG6dZBfOkMKfuJzd0T+nmJYRT6o4k8vrIQxgSLFwBekacu+GKUpZnjjAqFtEVwPG6efK/wA7o/2QGOe8dUycKreBuSxKg4cGXZzIL+kZppqRXAgMBAAECggEAUwGwdmE1oLBnk+FvlsJ65+VIG9s/+3UWvAMb8032/HrfyL1NBKaN6zo9cd7iq4Gx8Qmiq8jD58eu65JhYFtbvULUgQJS85mnfj+CvR97RvrS039/MZMGZjZqGAmzpQVyykvL+x7XgeVlJ38NqgZrFETyG7sTxlVriGwnpYv4v1tHaT4TgrtgYUDwwpUubdMz+ziZx4giWFXPObDWVohKsp0Fg1d8diqWqJY3KExTqn0yOGmgANcticS3AhiVkh7LjiHnhG+pcSZ1DNGohQ2MxcMpOIadaM7b9kPBdvlPLmltCEA66k05x5bng4p0y66s8+Nc5y8Qslx/Vl+vWKVN4QKBgQDUxX7KaQmMxV1V4nkUCotpm1/78ZQQrKqpGnrcAoBkQDFrqlY3WbRmiY6mt/lYYawREzvgmIHOBjhXfyh7eWft6IFBqq2xpoNrS0nFvIeCCi3C0np4XgPktVxS1q4I8UOM/gkYUKARf8YH1gCia8lZgp13eL7nyMiITxjaXPWvTwKBgQCe33GT0zZkOEfvCb08V244UccrEfDRZfBgm/uJuvXY3LpSXX1Q/ZJAgW5mARZ67czEIjJ3GU8XvaPIBETM3x+oQpbi065mkXZ2KUivdL7CNylfze3tsl67BpIBTigJHMXt8UFtKlkoXXYu7ApZCRqVfrJpJNr7TbYajUaZMpq4eQKBgQCNEhSqp1HJn+HuW6Xjf8pHTtko9lcxZwoP7Jqg3Je74EPkGp/nOva9NV77cudDjh7Dg3kjxHnr23vnp0tz8l7SAmIQ49UeAEUKEnTrQcCmm5ETpvHEdLEoJob79ZKWI0CibpwhHvPCJnFqKJ1rEwQA8PTujYQlsZ4joi3cOd47SQKBgFjtAvrWT2ybYBA5aFW9LnGRvKSr/xqGL50z0gDOyEthiV0O/VT3CgTXLb8kvruCHYpvBcZKQU4tlN4hHY17GpIo66H9EHJS23baNtgWxauaCquYbaQNoh6XV+QpJhmrpFJCJvf+qzb/0WYEMuqRQPMKnrxhp7zgS5zjFPAtNhMpAoGARNeZTO2nzjVopmKJwxBvxb6Yna692v9YC6dNfx4fYUidVx6+UQX83EtZZpHmHZviODzfmAVXwc8NpuizLYbL7UTe7YogcYuHc5dyu+N4zgo0SFOfDuZzYcHliZu7ryeGhJtDHQHQTT3HrcC5cC5XCNHuIPDARKp7UNQsA7G3ArU=
+  alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmz4nDQUz2ufu8aZdo3g1EsZ9/XryPNUgpx2iWQB3R5uQC+v7kiBehp1G6DOJjOAf+FQm+YI7HNWnNTZt3TOFLDPoYwIr4X/o+1bmXa7JzO28nK3Cbvy9DBmuWyiBesAHYfCWaVsHHZo6HXaYAXfYlj5Z4z+twSv7Dzv2EXwsLTOJoo+q7DPjknA8nKx0Z2ntSWwCWxhyb2Tk+5Si2rdPQ23+Fx5tMeN/F8nk4TPWP/fpdHDBF386NRFtA7mkr1duHpLaSp0B98YHUiHLg8O94L5svYoz1b6PyjoYwCiKbtXHmZh94fymCdvHjpk2Cz3Yiv7WE6pRMq67lZSKQyu3cwIDAQAB
+  notifyUrl: http://qezmwh.natappfree.cc/alipay/notify
