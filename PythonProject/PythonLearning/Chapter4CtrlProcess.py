@@ -57,7 +57,7 @@ age = 1
 while age <= 3:
     print(f"child is {age}-year-old. cannot go to nursery")
     age += 1
-print("can go to nursery") # while-else结构和for-else结构同理
+print("can go to nursery")
 
 # comprehensions
 # list comprehension
