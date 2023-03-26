@@ -70,5 +70,5 @@ def make_object(name, class_):
 # Python define special method. avoid using in your own program
 # single underline: _
 # showing a variable is temporary or unimportant
-# 表示某个变量是临时的或无关紧要for _ in range(3):
+for _ in range(3):
     print("Hello, world")
